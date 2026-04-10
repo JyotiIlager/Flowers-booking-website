@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Booking</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+    <div class="flower-booking-container">
+        <h1>Flower Booking</h1>
+        <div class="flower-images">
+            <img src="flower1.webp" alt="Rose" title="Rose">
+            <img src="flower2.webp" alt="Lily" title="Lily">
+            <img src="flower3.avif" alt="Tulip" title="Tulip">
+            <img src="flower4.avif" alt="Orchid" title="Orchid">
+            <img src="flower5.avif" alt="Sunflower" title="Sunflower">
+        </div>
+        <form id="flowerForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="flower">Choose a Flower:</label>
+            <select id="flower" name="flower" required>
+                <option value="">Select</option>
+                <option value="Rose">Rose</option>
+                <option value="Lily">Lily</option>
+                <option value="Tulip">Tulip</option>
+                <option value="Orchid">Orchid</option>
+                <option value="Sunflower">Sunflower</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+
+            <label for="address">Address :</label>
+            <input type="text" id="address" name="address">
+
+
+            <label for="date">Delivery Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmation" class="confirmation-message"></div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
